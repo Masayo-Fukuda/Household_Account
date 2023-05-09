@@ -1,0 +1,125 @@
+*{
+  padding: 0;
+  margin:0;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.alert-danger {
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  background-color: #ffcccc;
+  color: #cc0000;
+  border: 1px solid #cc0000;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.category {
+  height: 120px;
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.forms {
+  background-color: #F0F0F0;
+  width: 100VW;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+
+button {
+  width:100px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  display:block;
+  margin: 40px auto;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+button:hover {
+  background-color: #ffdd65;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.subBtn {
+  padding-bottom: 15vh;
+}
+
+
+footer {
+  width: 100vw;
+  height: 15vh;
+  background: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  position:fixed;
+  bottom:0;
+  z-index: 1000;
+}
+
+footer > a {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.544);
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 80px;
+  border: 1px solid #D9D9D9;
+  border-radius: 10px;
+}
+
+footer > a:hover {
+  background-color: #ffdd65
+}
+
+.record {
+  background: #ffdd65;
+}
+
+label {
+  margin-left: 20px;
+}
+
+input {
+  height: 30px;
+  font-size: 20px;
+  margin-right: 20px;
+  text-align: right;
+}
+
+select {
+  margin-right: 20px;
+}
+
+select > option {
+  height: 30px;
+  font-size: 20px;
+}

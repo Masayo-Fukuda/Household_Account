@@ -1,0 +1,83 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+:not(input) {
+  font-family: 'Alegreya Sans SC', sans-serif; /* inputタグ以外の要素に適用するCSS */
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffdd65;
+  height: 80px;
+  padding: 0px 15px 0px ;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+  height: 100vh;
+}
+
+form{
+  font-size: 20px;
+  margin-top: 30px;
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+hr{
+  width: 40%;
+}
+
+.content-box{
+  width:200px;
+  padding: 20px 0px;
+}
+
+.content{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+
+input{
+  width: 200px; 
+  height: 30px;
+  font-size: 20px;
+}
+
+button{
+  width:85px;
+  height: 35px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffdd65;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+a{
+  text-decoration: none;
+  color: #00000070;
+}
+a:hover{
+  color: #000000;
+}

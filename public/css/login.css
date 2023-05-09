@@ -1,0 +1,103 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+:not(input) {
+  font-family: 'Alegreya Sans SC', sans-serif; /* inputタグ以外の要素に適用するCSS */
+}
+
+
+header{
+  display: flex;
+  align-items: center; /*垂直方向の中央揃え*/
+  background-color: #ffdd65;
+  height: 80px; /*縦幅指定*/
+  padding: 0px 15px 0px; /*左右の余白指定*/
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+  height: 100vh;
+}
+
+form{ 
+  font-size: 20px;
+  margin-top: 30px;
+  width: 270px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+hr{
+  width: 85px;
+}
+
+.content-box{
+  width:200px;
+  padding: 20px 0px;
+}
+
+.content{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+
+input{
+  width: 200px; 
+  height: 30px;
+  font-size: 20px;
+}
+
+.check-content{
+  display: flex;
+  flex-direction: row;
+}
+
+.check-box{
+  width: 30px;
+  height: 30px;
+}
+
+.button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  width:85px;
+  height: 35px;
+  font-size: 20px;
+  margin: 20px 0px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer; /*カーソルが手のアイコンに変わる*/
+  transition: all 0.3s ease;
+}
+
+button:hover{
+  background-color: #ffdd65;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+a{
+  text-decoration: none;
+  color: #00000070;
+}
+
+a:hover{
+  color: #000000;
+}
+

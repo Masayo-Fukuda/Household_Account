@@ -1,0 +1,45 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+html, body {
+  overflow: hidden; /*画面固定*/
+}  
+
+a{ /*ヘッダー右部*/
+  text-decoration: none; /*下線部削除*/
+  color: #00000070;
+}
+
+a:hover{
+  color: #000000;
+}
+
+header{
+  display: flex;
+  align-items: center; /*垂直方向の中央揃え*/
+  justify-content: space-between; /*コンテンツを左右へ*/
+  background-color: #ffdd65;
+  height: 80px; /*縦幅指定*/
+  padding: 0px 15px 0px ; /*左右の余白指定*/
+}
+
+main{
+  display: flex;
+  justify-content: center; /* 水平方向の中央揃え */
+  align-items: center; /* 垂直方向の中央揃え */
+  text-align: center; /*テキストを中央揃え*/
+  height: 100vh; /* 画面全体の高さに設定 */
+}
+
+#bgvideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}

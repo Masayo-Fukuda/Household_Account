@@ -1,0 +1,54 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffdd65;
+  height: 80px;
+  padding: 0px 15px 0px ;
+}
+
+main{
+  background-color: #fafafa;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-box{
+  font-size: 20px;
+  margin-top: 30px;
+  width: 350px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+a.button {
+  display: inline-block;/*ブロック要素へ変換*/
+  text-decoration: none;
+  font-size: 20px;
+  margin: 20px 0px 10px;
+  border-radius: 3px;
+  color: #000000;
+  background-color:#F0F0F0;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+a.button:hover {
+  background-color: #ffdd65;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+}
+

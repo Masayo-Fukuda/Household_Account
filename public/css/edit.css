@@ -1,0 +1,76 @@
+*{
+  padding: 0;
+  margin:0;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.back {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+  margin-bottom: 60px;
+}
+
+.back > a{
+  display: inline-block;
+  width: 100px;
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.482);
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.forms {
+  background-color: #F0F0F0;
+  width: 100VW;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  margin-top: 2px;
+}
+
+.button {
+  width:100px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  display:block;
+  margin: 40px auto;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+.button:hover {
+  background-color: #ffdd65;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.forms > input {
+  height: 30px;
+  font-size: 20px;
+  margin-right: 20px;
+  text-align: right;
+}
+
+label {
+  margin-left: 20px;
+}
+
+select {
+  margin-right: 20px;
+}
+
+select > option {
+  height: 30px;
+  font-size: 20px;
+  text-align: right;
+}
