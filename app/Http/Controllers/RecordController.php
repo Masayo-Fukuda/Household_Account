@@ -8,6 +8,7 @@ use App\Models\IncomeCategory;
 use App\Models\ExpenseCategory;
 use App\Models\Expense;
 use App\Models\Income;
+use App\Service\ExchangeService;
 use Illuminate\Support\Facades\Session;
 
 class RecordController extends Controller
@@ -49,12 +50,13 @@ class RecordController extends Controller
         $category_id = $request->input('category');
         $memo = $request->input('memo');
         $date = $request->input('date');
-        $exchange_rate =app('App\Http\Controllers\ExchangeController')->getExchangeRate(); 
 
         if (empty($amount) || empty($category_id) || empty($date)) {
             Session::flash('error_message', 'There are missing entries in the data.');
             return redirect()->back();
         }
+
+        $exchange_rate = ExchangeService::getExchangeRate();
 
         if ($request->input('q1') == 'expense') {
             $expense = new Expense();
@@ -78,7 +80,8 @@ class RecordController extends Controller
             $income->save();
         }
 
-        Session::flash('flash_message', '記録が追加されました！');
+        Session::flash('success_message', 'Record successfully');
+
         return redirect('/records/create');
     }
 
@@ -150,8 +153,6 @@ class RecordController extends Controller
         } else {
             return response()->json(['message' => 'Invalid Option'], 422);
         }
-
-        Session::flash('flash_message', '記録が編集されました！');
 
         return redirect()->route('records.create');
     }
